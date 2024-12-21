@@ -13,26 +13,27 @@
     <div id="wrapper">
         <div id="header">
             FluxTalk
-            <div id="login">
-                Login
+            <div id="signup">
+                Sign up
             </div>
             <br>
             <div></div>
         </div>
-        <form>
+        <form id="myform">
             <input type="text" name="username" placeholder="Username"><br>
+            <input type="text" name="email" placeholder="Email"><br>
             <div class="gender">
                 Gender: <br>
-                <input type="radio" name="gender"> Male<br>
-                <input type="radio" name="gender"> Female<br>
+                <input type="radio" value="Male" name="gender"> Male<br>
+                <input type="radio" value="Female" name="gender"> Female<br>
             </div>
             <input type="password" name="password" placeholder="Password"><br>
             <input type="password" name="password2" placeholder="Retype Password"><br>
-            <input type="submit" value="Sign up"><br>
+            <input type="submit" value="Sign up" id="signup_button"><br>
         </form>
     </div>
 </body>
 
 </html>
 
-<script src="./assets/js/index.js"></script>
+<script src="./assets/js/signup.js"></script>
