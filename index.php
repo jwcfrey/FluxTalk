@@ -11,11 +11,11 @@
 
 <body>
     <div id="wrapper">
-        <div id="left_pannel">
+    <div id="left_pannel">
             <div id="left_pannel_image">
                 <img id="profile_image" src="./assets/ui/images/user1.jpg" alt="">
                 <br>
-                Sigma
+                    Sigma
                 <br>
                 <span class="wrapper-span">Sigma@gmail.com</span>
                 <br><br><br>
@@ -52,3 +52,5 @@
 </body>
 
 </html>
+
+<script src="./assets/js/index.js"></script>
