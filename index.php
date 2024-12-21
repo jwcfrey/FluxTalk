@@ -20,13 +20,13 @@
                 <span class="wrapper-span">Sigma@gmail.com</span>
                 <br><br><br>
                 <div>
-                    <label for="box">Chat
+                    <label id="label_chat" for="radio_chat">Chat
                         <img src="./assets/ui/icons/chat.png" alt="">
                     </label>
-                    <label for="">Contacts
+                    <label id="label_contacts" for="radio_contacts">Contacts
                         <img src="./assets/ui/icons/contacts.png" alt="">
                     </label>
-                    <label for="">Settings
+                    <label id="label_settings" for="radio_settings">Settings
                         <img src="./assets/ui/icons/settings.png" alt="">
                     </label>
                 </div>
@@ -38,10 +38,13 @@
             </div>
             <div id="container">
                 <div id="inner_left_pannel">
-                    <input type="checkbox" id="box" name="">
-                </div>
-                <div id="inner_right_pannel">
 
+                </div>
+                <input type="radio" id="radio_chat" name="myradio" class="radio_all_chat">
+                <input type="radio" id="radio_contacts" name="myradio" class="radio_all_chat">
+                <input type="radio" id="radio_settings" name="myradio" class="radio_all_chat">
+                <div id="inner_right_pannel">
+                    
                 </div>
             </div>
         </div>
