@@ -1,0 +1,10 @@
+Received data: stdClass Object
+(
+    [password2] => ogiyuka123
+    [password] => ogiyuka123
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => ogiyuka
+    [data_type] => signup
+)
+
