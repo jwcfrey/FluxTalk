@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FluxTalk</title>
+    <title>FluTalk</title>
     <link rel="stylesheet" href="assets/css/signup.css">
 </head>
 
@@ -29,7 +29,7 @@
             </div>
             <input type="password" name="password" placeholder="Password"><br>
             <input type="password" name="password2" placeholder="Retype Password"><br>
-            <input type="submit" value="Sign up" id="signup_button"><br>
+            <input type="button" value="Sign up" id="signup_button" class="button_signup"><br>
         </form>
     </div>
 </body>
