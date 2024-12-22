@@ -25,7 +25,7 @@
             <input type="password" name="password" placeholder="Password"><br>
             <input type="submit" value="Login" id="login_button" class="login_button"><br>
             <br>
-            <a href="signup.php" id="signup_have">
+            <a href="signup.php" class="signup__text">
                 Dont Have An Account? Signup here
             </a>
         </form>

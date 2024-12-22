@@ -4056,3 +4056,338 @@ Received data: stdClass Object
     [data_type] => chat
 )
 
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => logout
+)
+
+Received data: stdClass Object
+(
+    [password2] => Banuaja123.
+    [password] => Banuaja123.
+    [email] => banu@gmail.com
+    [username] => banu
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Banuaja123.
+    [password] => Banuaja123.
+    [email] => Banu@gmail.com
+    [username] => banu
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => 
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => 
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => 
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password
+    [password] => Password
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password.
+    [password] => Password.
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password.
+    [password] => Password.
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password.
+    [password] => Password.
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password.
+    [password] => Password.
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password.
+    [password] => Password.
+    [gender] => Female
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Password123.
+    [password] => Password123.
+    [gender] => Female
+    [email] => ogiyuka@gmail.com
+    [username] => Ogiyuka
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password] => Password123.
+    [email] => Ogiyuka
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Miku123.
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Miku123.
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Miku123.
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Miku123.
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Miku123.
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Miku123.
+    [password] => Miku123.
+    [gender] => Female
+    [email] => miku@gmail.com
+    [username] => Miku
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password] => Miku123.
+    [email] => Miku
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Miku123.
+    [email] => miku@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+

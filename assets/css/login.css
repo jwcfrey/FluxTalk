@@ -77,3 +77,9 @@ input[type=radio] {
 .gender {
     padding: 10px;
 }
+
+.signup__text {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}

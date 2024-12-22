@@ -25,8 +25,8 @@
             <input type="text" name="email" placeholder="Email"><br>
             <div class="gender">
                 Gender: <br>
-                <input type="radio" value="Male" name="gender"> Male<br>
-                <input type="radio" value="Female" name="gender"> Female<br>
+                <input type="radio" value="Male" id="gender_male" name="gender_male"> Male<br>
+                <input type="radio" value="Female" id="gender_female" name="gender_female"> Female<br>
             </div>
             <input type="password" name="password" placeholder="Password"><br>
             <input type="password" name="password2" placeholder="Retype Password"><br>

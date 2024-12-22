@@ -21,7 +21,8 @@ function collect_data() {
             case "email":
                 data.email = inputs[i].value;
                 break;
-            case "gender":
+            case "gender_male":
+            case "gender_female":
                 if (inputs[i].checked) {
                     data.gender = inputs[i].value;
                 }
