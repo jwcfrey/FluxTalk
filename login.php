@@ -23,7 +23,7 @@
         <form id="myform">
             <input type="text" name="email" placeholder="Email"><br>
             <input type="password" name="password" placeholder="Password"><br>
-            <input type="button" value="Login" id="login_button" class="login_button"><br>
+            <input type="submit" value="Login" id="login_button" class="login_button"><br>
         </form>
     </div>
 </body>

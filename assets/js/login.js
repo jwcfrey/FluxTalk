@@ -5,7 +5,8 @@ function _(element) {
 var login_button = _("login_button");
 login_button.addEventListener("click", collect_data);
 
-function collect_data() {
+function collect_data(e) {
+    e.preventDefault();
     login_button.disabled = true;
     login_button.value = "Loading";
     var myform = _("myform");

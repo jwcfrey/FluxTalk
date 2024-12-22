@@ -15,9 +15,9 @@
             <div id="left_pannel_image user_info" >
                 <img id="profile_image" src="./assets/ui/images/malenoprofile.png" alt="">
                 <br>
-                    <span id="username">Username</span>
+                    <span id="username">Loading..</span>
                 <br>
-                <span id="email" class="wrapper-span">Email@gmail.com</span>
+                <span id="email" class="wrapper-span">Loading..</span>
                 <br><br><br>
                 <div>
                     <label id="label_chat" for="radio_chat">Chat
@@ -31,6 +31,7 @@
                     </label>
                 </div>
             </div>
+            <input type="button" value="Logout" id="logout">
         </div>
         <div id="right_pannel">
             <div id="header">

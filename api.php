@@ -28,7 +28,10 @@ if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "signup") {
 } else if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "login") {
     //login
     include("includes/login.php");
+} else if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "logout") {
+    //logout
+    include("includes/logout.php");
 } else if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "user_info") {
     //user information
-    include("includes/user_info");
+    include("includes/user_info.php");
 }

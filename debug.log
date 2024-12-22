@@ -204,3 +204,227 @@ Received data: stdClass Object
     [data_type] => login
 )
 
+Received data: stdClass Object
+(
+    [password] => Banuaja123.
+    [email] => zara@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Banuaja123.
+    [email] => zara@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Sabeb123.
+    [email] => sabeb@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Sabeb123.
+    [email] => sabeb@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [password] => Banuaja123.
+    [email] => zara@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => logout
+)
+
