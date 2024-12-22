@@ -8,3 +8,131 @@ Received data: stdClass Object
     [data_type] => signup
 )
 
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [gender] => Male
+    [email] => sdas
+    [username] => asa
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => asas
+    [password] => asa
+    [gender] => Male
+    [email] => sdas
+    [username] => asa
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => sdsd
+    [password] => wdsdsd
+    [gender] => Male
+    [email] => wninw
+    [username] => 1212__
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [gender] => Male
+    [email] => banda
+    [username] => __1821212
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => 12__12
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => banu123
+    [password] => banu123
+    [gender] => Male
+    [email] => bondan
+    [username] => 12__12
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [gender] => Male
+    [email] => 
+    [username] => Ippaiware
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => 
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [gender] => Female
+    [email] => 
+    [username] => zaraaaamr
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [gender] => Female
+    [email] => 
+    [username] => zaraaaamr
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [gender] => Female
+    [email] => 
+    [username] => zaraaaamr
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => zara
+    [password] => zara
+    [gender] => Female
+    [email] => zara@gmail.com
+    [username] => zaraaaamr
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Banuaja123.
+    [password] => Banuaja123.
+    [gender] => Female
+    [email] => zara@gmail.com
+    [username] => zaraaaamr
+    [data_type] => signup
+)
+

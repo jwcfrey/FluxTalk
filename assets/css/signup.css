@@ -32,6 +32,14 @@ form {
     font-family: "Roboto Slab", serif;
 }
 
+#error {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #ecaf91;
+    color: white;
+    display: none;
+}
+
 input[type=text] {
     padding: 10px;
     margin: 10px;
