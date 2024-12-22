@@ -69,6 +69,7 @@
     font-family: "Caveat Brush", serif;
     font-weight: 400;
     font-style: normal;
+    position: relative;
 }
 
 #container {
@@ -121,4 +122,13 @@
 #contact img{
     width: 100px;
     height: 100px;
+}
+
+.loader_on {
+    position: absolute;
+    width: 30%;
+}
+
+.loader_off {
+    display: none;
 }

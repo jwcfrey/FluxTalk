@@ -10,6 +10,8 @@ $DATA_OBJ = json_decode($DATA_RAW);
 
 $info = (object) [];
 
+file_put_contents("debug.log", "Received data_type: " . $DATA_OBJ->data_type . "\n", FILE_APPEND);
+
 if (!isset($_SESSION['userid'])) {
     if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type != "login" && $DATA_OBJ->data_type != "signup") {
         $info->logged_in = false;
@@ -21,7 +23,7 @@ if (!isset($_SESSION['userid'])) {
 require_once("./classes/autoload.php");
 $DB = new Database();
 
-file_put_contents("debug.log", "Received data: " . print_r($DATA_OBJ, true) . "\n", FILE_APPEND);
+file_put_contents("debug.log", "Received data_type: " . $DATA_OBJ->data_type . "\n", FILE_APPEND);
 
 $Error = "";
 
@@ -34,7 +36,6 @@ if (isset($DATA_OBJ->data_type)) {
             include("includes/login.php");
             break;
         case "logout":
-            // Hapus sesi untuk logout
             session_unset();
             session_destroy();
             $info->message = "Successfully logged out.";
@@ -44,7 +45,6 @@ if (isset($DATA_OBJ->data_type)) {
         case "user_info":
             if (isset($_SESSION['userid'])) {
                 $data['userid'] = $_SESSION['userid'];
-
                 $query = "SELECT username, email FROM users WHERE userid = :userid LIMIT 1";
                 $result = $DB->read($query, $data);
 
@@ -66,11 +66,14 @@ if (isset($DATA_OBJ->data_type)) {
         case "contacts":
             include("includes/contacts.php");
             break;
-        case "chat":
-            include("includes/chat.php");
+        case "chats":
+            include("includes/chats.php");
             break;
         case "settings":
             include("includes/settings.php");
+            break;
+        case "save_settings":
+            include("includes/save_settings.php");
             break;
         default:
             $info->message = "Invalid request type.";

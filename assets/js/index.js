@@ -5,8 +5,8 @@ function _(element) {
 var label_contacts = _("label_contacts");
 label_contacts.addEventListener("click", get_contacts);
 
-var label_chat = _("label_chat");
-label_chat.addEventListener("click", get_chat);
+var label_chats = _("label_chats");
+label_chats.addEventListener("click", get_chats);
 
 var label_settings = _("label_settings");
 label_settings.addEventListener("click", get_settings);
@@ -16,9 +16,13 @@ logout.addEventListener("click", logout_user);
 
 function get_data(find, type) {
     var xml = new XMLHttpRequest();
+    var loader_holder = _("loader_holder");
+    loader_holder.className = "loader_on";
+
     xml.onload = function () {
         if (xml.readyState == 4 && xml.status == 200) {
-            handle_result(xml.responseText);
+            loader_holder.className = "loader_off";
+            handle_result(xml.responseText, type);
         }
     };
     var data = {};
@@ -40,6 +44,12 @@ function handle_result(result) {
                     case "user_info":
                         var username = _("username");
                         var email = _("email");
+                        var profile_image = _("profile_image");
+
+                        // Pastikan properti 'image' ada dalam objek
+                        if (obj.image && profile_image) {
+                            profile_image.src = obj.image;
+                        }
 
                         if (username && email) {
                             username.innerHTML = obj.username || "N/A";
@@ -48,18 +58,20 @@ function handle_result(result) {
                         break;
                     case "contacts":
                         var inner_left_pannel = _("inner_left_pannel");
-
                         inner_left_pannel.innerHTML = obj.message;
                         break;
                     case "chats":
                         var inner_left_pannel = _("inner_left_pannel");
-
                         inner_left_pannel.innerHTML = obj.message;
                         break;
                     case "settings":
                         var inner_left_pannel = _("inner_left_pannel");
-
                         inner_left_pannel.innerHTML = obj.message;
+                        break;
+                    case "save_settings":
+                        alert(obj.message);
+                        get_data({}, "user_info");
+                        get_settings(true);
                         break;
                     case "logout":
                         window.location = "login.php";
@@ -88,10 +100,73 @@ function get_contacts(e) {
     get_data({}, "contacts");
 }
 
-function get_chat(e) {
-    get_data({}, "chat");
+function get_chats(e) {
+    get_data({}, "chats");
 }
 
 function get_settings(e) {
     get_data({}, "settings");
+}
+
+
+//settings.js
+
+function collect_data(event) {
+    var save_settings_button = _("save_settings_button");
+    save_settings_button.disabled = true;
+    save_settings_button.value = "Loading";
+
+    var myform = _("myform");
+    if (!myform) {
+        console.error("Form with ID 'myform' not found.");
+        save_settings_button.disabled = false;
+        save_settings_button.value = "Save Settings";
+        return;
+    }
+
+    var inputs = myform.getElementsByTagName("INPUT");
+    var data = {};
+
+    for (var i = inputs.length - 1; i >= 0; i--) {
+        var key = inputs[i].name;
+        switch (key) {
+            case "username":
+                data.username = inputs[i].value;
+                break;
+            case "email":
+                data.email = inputs[i].value;
+                break;
+            case "gender":
+                if (inputs[i].checked) {
+                    data.gender = inputs[i].value;
+                }
+                break;
+            case "password":
+                data.password = inputs[i].value;
+                break;
+            case "password2":
+                data.password2 = inputs[i].value;
+                break;
+        }
+    }
+
+    console.log("Data being sent:", data);
+    send_data(data, "save_settings");
+}
+
+function send_data(data, type) {
+    var xml = new XMLHttpRequest();
+    xml.onload = function () {
+        if (xml.readyState == 4 && xml.status == 200) {
+            handle_result(xml.responseText);
+            var save_settings_button = _("save_settings_button");
+            save_settings_button.disabled = false;
+            save_settings_button.value = "Save Settings";
+        }
+    };
+
+    data.data_type = type;
+    var data_string = JSON.stringify(data);
+    xml.open("POST", "api.php", true);
+    xml.send(data_string);
 }

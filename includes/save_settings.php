@@ -1,11 +1,24 @@
 <?php
 
 $info = (Object) [];
-$data = false;
-$data['userid'] = $DB->generate_id(20);
-$data['date'] = date("Y-m-d H:i:s");
+$Error = ""; // Inisialisasi variabel error
 
-// Validate username
+$data = false;
+
+// Pastikan session memiliki `userid`
+if (!isset($_SESSION['userid'])) {
+    $info->message = "User not logged in.";
+    $info->data_type = "error";
+    echo json_encode($info);
+    die;
+}
+
+$data['userid'] = $_SESSION['userid'];
+
+// Debug log untuk memeriksa data yang diterima
+file_put_contents("debug.log", print_r($DATA_OBJ, true), FILE_APPEND);
+
+// Validasi username
 $data['username'] = trim($DATA_OBJ->username);
 if (strlen($data['username']) < 3) {
     $Error .= "Username should be at least 3 characters long.<br>";
@@ -14,23 +27,21 @@ if (!preg_match("/^[a-zA-Z0-9_]+$/", $data['username'])) {
     $Error .= "Username can only contain letters, numbers, and underscores.<br>";
 }
 
-// Validate email
+// Validasi email
 $data['email'] = trim($DATA_OBJ->email);
 if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
     $Error .= "Please enter a valid email address.<br>";
 }
 
-// Validate gender
+// Validasi gender
 $data['gender'] = isset($DATA_OBJ->gender) ? $DATA_OBJ->gender : null;
-if(empty($DATA_OBJ->gender)) {
-    $Error.= "Please select your gender.<br>";
-} else {
-    if ($DATA_OBJ->gender != "Male" && $DATA_OBJ->gender != "Female") {
-        $Error .= "Please select your valid gender. <br>";
-    }
+if (empty($data['gender'])) {
+    $Error .= "Please select your gender.<br>";
+} elseif ($data['gender'] != "Male" && $data['gender'] != "Female") {
+    $Error .= "Please select a valid gender.<br>";
 }
 
-// Validate password
+// Validasi password
 $data['password'] = $DATA_OBJ->password;
 $password2 = $DATA_OBJ->password2;
 if (strlen($data['password']) < 8) {
@@ -43,24 +54,26 @@ if ($data['password'] !== $password2) {
     $Error .= "Passwords do not match.<br>";
 }
 
-// If no errors, proceed to save data
+// Jika tidak ada error, simpan data
 if ($Error == "") {
-    // Hapus enkripsi password (password_hash) di sini
-    // $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT); // Hapus baris ini
-    $query = "INSERT INTO users (userid, username, email, gender, password, date) VALUES (:userid, :username, :email, :gender, :password, :date)";
+    // Log data untuk debugging
+    file_put_contents("debug.log", "Validated data: " . print_r($data, true), FILE_APPEND);
+
+    // Simpan data ke database
+    $query = "UPDATE users SET username = :username, email = :email, gender = :gender, password = :password WHERE userid = :userid LIMIT 1";
     $result = $DB->write($query, $data);
 
     if ($result) {
-        $info->message = "Your profile was created successfully";
-        $info->data_type = "info";
+        $info->message = "Your data was saved successfully.";
+        $info->data_type = "save_settings";
         echo json_encode($info);
     } else {
-        $info->message = "Your process was not created due to an error";
-        $info->data_type = "error";
+        $info->message = "Your data was not saved due to an error.";
+        $info->data_type = "save_settings";
         echo json_encode($info);
     }
 } else {
     $info->message = $Error;
-    $info->data_type = "error";
+    $info->data_type = "save_settings";
     echo json_encode($info);
 }
