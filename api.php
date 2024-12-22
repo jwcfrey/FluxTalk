@@ -63,6 +63,15 @@ if (isset($DATA_OBJ->data_type)) {
                 echo json_encode($info);
             }
             break;
+        case "contacts":
+            include("includes/contacts.php");
+            break;
+        case "chat":
+            include("includes/chat.php");
+            break;
+        case "settings":
+            include("includes/settings.php");
+            break;
         default:
             $info->message = "Invalid request type.";
             $info->data_type = "error";

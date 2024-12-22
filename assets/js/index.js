@@ -2,6 +2,15 @@ function _(element) {
     return document.getElementById(element);
 }
 
+var label_contacts = _("label_contacts");
+label_contacts.addEventListener("click", get_contacts);
+
+var label_chat = _("label_chat");
+label_chat.addEventListener("click", get_chat);
+
+var label_settings = _("label_settings");
+label_settings.addEventListener("click", get_settings);
+
 var logout = _("logout");
 logout.addEventListener("click", logout_user);
 
@@ -37,6 +46,21 @@ function handle_result(result) {
                             email.innerHTML = obj.email || "N/A";
                         }
                         break;
+                    case "contacts":
+                        var inner_left_pannel = _("inner_left_pannel");
+
+                        inner_left_pannel.innerHTML = obj.message;
+                        break;
+                    case "chats":
+                        var inner_left_pannel = _("inner_left_pannel");
+
+                        inner_left_pannel.innerHTML = obj.message;
+                        break;
+                    case "settings":
+                        var inner_left_pannel = _("inner_left_pannel");
+
+                        inner_left_pannel.innerHTML = obj.message;
+                        break;
                     case "logout":
                         window.location = "login.php";
                         break;
@@ -59,3 +83,15 @@ function logout_user() {
 
 // Fetch user info on page load
 get_data({}, "user_info");
+
+function get_contacts(e) {
+    get_data({}, "contacts");
+}
+
+function get_chat(e) {
+    get_data({}, "chat");
+}
+
+function get_settings(e) {
+    get_data({}, "settings");
+}

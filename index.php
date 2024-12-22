@@ -45,20 +45,7 @@
             </div>
             <div id="container">
                 <div id="inner_left_pannel">
-                    <div class="image_contact">
-                        <div id="contact">
-                            <img src="./assets/ui/images/user1.png" alt="contact1" loading="lazy">
-                            <br> Username
-                        </div>
-                        <div id="contact">
-                            <img src="./assets/ui/images/user2.jpg" alt="contact1" loading="lazy">
-                            <br> Username
-                        </div>
-                        <div id="contact">
-                            <img src="./assets/ui/images/user3.jpg" alt="contact1" loading="lazy">
-                            <br> Username
-                        </div>
-                    </div>
+                    
                 </div>
                 <input type="radio" id="radio_chat" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_contacts" name="myradio" class="radio_all_chat">
