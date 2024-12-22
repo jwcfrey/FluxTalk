@@ -1,10 +1,18 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+header('Content-Type: application/json');
+
+$DATA_RAW = file_get_contents("php://input");
+$DATA_OBJ = json_decode($DATA_RAW);
 
 $info = (object) [];
-//check if logged in
+
+// Cek jika sesi tidak ada dan permintaan bukan login
 if (!isset($_SESSION['userid'])) {
-    if(isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type != "login") {
+    if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type != "login") {
         $info->logged_in = false;
         echo json_encode($info);
         die;
@@ -14,24 +22,55 @@ if (!isset($_SESSION['userid'])) {
 require_once("./classes/autoload.php");
 $DB = new Database();
 
-$DATA_RAW = file_get_contents("php://input");
-$DATA_OBJ = json_decode($DATA_RAW);
-
 file_put_contents("debug.log", "Received data: " . print_r($DATA_OBJ, true) . "\n", FILE_APPEND);
 
 $Error = "";
 
-// Proses data
-if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "signup") {
-    //signup 
-    include("includes/signup.php");
-} else if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "login") {
-    //login
-    include("includes/login.php");
-} else if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "logout") {
-    //logout
-    include("includes/logout.php");
-} else if (isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "user_info") {
-    //user information
-    include("includes/user_info.php");
+if (isset($DATA_OBJ->data_type)) {
+    switch ($DATA_OBJ->data_type) {
+        case "signup":
+            include("includes/signup.php");
+            break;
+        case "login":
+            include("includes/login.php");
+            break;
+        case "logout":
+            // Hapus sesi untuk logout
+            session_unset();
+            session_destroy();
+            $info->message = "Successfully logged out.";
+            $info->data_type = "logout";
+            echo json_encode($info);
+            break;
+        case "user_info":
+            if (isset($_SESSION['userid'])) {
+                $data['userid'] = $_SESSION['userid'];
+
+                $query = "SELECT username, email FROM users WHERE userid = :userid LIMIT 1";
+                $result = $DB->read($query, $data);
+
+                if (is_array($result)) {
+                    $result = $result[0];
+                    $result->data_type = "user_info";
+                    echo json_encode($result);
+                } else {
+                    $info->message = "No account found with this user ID.";
+                    $info->data_type = "error";
+                    echo json_encode($info);
+                }
+            } else {
+                $info->message = "User not logged in.";
+                $info->data_type = "error";
+                echo json_encode($info);
+            }
+            break;
+        default:
+            $info->message = "Invalid request type.";
+            $info->data_type = "error";
+            echo json_encode($info);
+    }
+} else {
+    $info->message = "Invalid input.";
+    $info->data_type = "error";
+    echo json_encode($info);
 }

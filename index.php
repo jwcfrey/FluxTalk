@@ -29,9 +29,11 @@
                     <label id="label_settings" for="radio_settings">Settings
                         <img src="./assets/ui/icons/settings.png" alt="">
                     </label>
+                    <label id="logout" for="radio_logout">Logout
+                        <img src="./assets/ui/icons/logout.png" alt="">
+                    </label>
                 </div>
             </div>
-            <input type="button" value="Logout" id="logout">
         </div>
         <div id="right_pannel">
             <div id="header">
@@ -43,6 +45,7 @@
                 </div>
                 <input type="radio" id="radio_chat" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_contacts" name="myradio" class="radio_all_chat">
+                <input type="radio" id="radio_settings" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_settings" name="myradio" class="radio_all_chat">
                 <div id="inner_right_pannel">
                     
