@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FluxTalk</title>
-    <link rel="stylesheet" href="assets/css/signup.css">
+    <link rel="stylesheet" href="assets/css/signup.css"/>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div id="error">
-            
+
         </div>
         <form id="myform">
             <input type="text" name="username" placeholder="Username"><br>

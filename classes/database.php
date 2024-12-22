@@ -33,6 +33,24 @@ class Database
         }
         return false;
     }
+
+    //read from database
+    public function read($query, $data_array = [])
+    {
+        $con = $this->connect();
+        $statement = $con->prepare($query);
+        $check = $statement->execute($data_array);
+        if ($check) {
+            $result = $statement->fetchAll(PDO::FETCH_OBJ);
+            if(is_array($result) && count($result) > 0)
+            {
+                return $result;
+            }
+            return false;
+        }
+        return false;
+    }
+    
     public function generate_id($max)
     {
         $rand = "";

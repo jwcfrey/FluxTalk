@@ -136,3 +136,71 @@ Received data: stdClass Object
     [data_type] => signup
 )
 
+Received data: stdClass Object
+(
+    [password2] => sabeb123
+    [password] => sabeb123
+    [gender] => Male
+    [email] => sabeb@gmail.com
+    [username] => sabeb
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Sabeb123.
+    [password] => Sabeb123.
+    [gender] => Male
+    [email] => sabeb@gmail.com
+    [username] => sabeb
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Sabeb123.
+    [password] => Sabeb123
+    [gender] => Male
+    [email] => sabeb@gmail.com
+    [username] => sabeb
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Sabeb123.
+    [password] => Sabeb123.
+    [gender] => Male
+    [email] => sabeb@gmail.com
+    [username] => sabeb
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password] => Sabeb123.
+    [email] => sabeb@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Sabeb123.
+    [email] => sabeb@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Sabeb123.
+    [email] => sabeb@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [password] => Sabeb123.
+    [email] => sabeb@gmail.com
+    [data_type] => login
+)
+
