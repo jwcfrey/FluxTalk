@@ -4391,3 +4391,327 @@ Received data: stdClass Object
     [data_type] => chat
 )
 
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => logout
+)
+
+Received data: stdClass Object
+(
+    [password2] => akmal123.
+    [password] => Akmal123.
+    [gender] => Male
+    [email] => akmal@gmail.com
+    [username] => Akmal
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password2] => Akmal123.
+    [password] => Akmal123.
+    [gender] => Male
+    [email] => akmal@gmail.com
+    [username] => Akmal
+    [data_type] => signup
+)
+
+Received data: stdClass Object
+(
+    [password] => Akmal123.
+    [email] => akmal@gmail.com
+    [data_type] => login
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => user_info
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => settings
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => contacts
+)
+
+Received data: stdClass Object
+(
+    [find] => stdClass Object
+        (
+        )
+
+    [data_type] => chat
+)
+
