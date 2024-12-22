@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FluxTalK</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="wrapper">
-    <div id="left_pannel">
-            <div id="left_pannel_image user_info" >
+        <div id="left_pannel">
+            <div id="left_pannel_image user_info">
                 <img id="profile_image" src="./assets/ui/images/malenoprofile.png" alt="">
                 <br>
-                    <span id="username">Loading..</span>
+                <span id="username">Loading..</span>
                 <br>
                 <span id="email" class="wrapper-span">Loading..</span>
                 <br><br><br>
@@ -29,8 +32,9 @@
                     <label id="label_settings" for="radio_settings">Settings
                         <img src="./assets/ui/icons/settings.png" alt="">
                     </label>
-                    <label id="logout" for="radio_logout">Logout
-                        <img src="./assets/ui/icons/logout.png" alt="">
+                    <label id="logout" for="radio_logout">
+                        Logout
+                        <i class="fa fa-sign-out" aria-hidden="true" id="logout_btn"></i>
                     </label>
                 </div>
             </div>
@@ -41,14 +45,18 @@
             </div>
             <div id="container">
                 <div id="inner_left_pannel">
-
+                    <div class="contact_inner_left">
+                        <div id="contact">
+                            <img src="/assets/ui/images/user1.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
                 <input type="radio" id="radio_chat" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_contacts" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_settings" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_settings" name="myradio" class="radio_all_chat">
                 <div id="inner_right_pannel">
-                    
+
                 </div>
             </div>
         </div>
