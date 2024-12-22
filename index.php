@@ -12,12 +12,12 @@
 <body>
     <div id="wrapper">
     <div id="left_pannel">
-            <div id="left_pannel_image">
-                <img id="profile_image" src="./assets/ui/images/user1.jpg" alt="">
+            <div id="left_pannel_image user_info" >
+                <img id="profile_image" src="./assets/ui/images/malenoprofile.png" alt="">
                 <br>
-                    Sigma
+                    <span id="username">Username</span>
                 <br>
-                <span class="wrapper-span">Sigma@gmail.com</span>
+                <span id="email" class="wrapper-span">Email@gmail.com</span>
                 <br><br><br>
                 <div>
                     <label id="label_chat" for="radio_chat">Chat
