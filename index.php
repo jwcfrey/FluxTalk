@@ -45,9 +45,18 @@
             </div>
             <div id="container">
                 <div id="inner_left_pannel">
-                    <div class="contact_inner_left">
+                    <div class="image_contact">
                         <div id="contact">
-                            <img src="/assets/ui/images/user1.jpg" alt="">
+                            <img src="./assets/ui/images/user1.png" alt="contact1" loading="lazy">
+                            <br> Username
+                        </div>
+                        <div id="contact">
+                            <img src="./assets/ui/images/user2.jpg" alt="contact1" loading="lazy">
+                            <br> Username
+                        </div>
+                        <div id="contact">
+                            <img src="./assets/ui/images/user3.jpg" alt="contact1" loading="lazy">
+                            <br> Username
                         </div>
                     </div>
                 </div>
