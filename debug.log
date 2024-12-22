@@ -537,3 +537,12 @@ Received data: stdClass Object
     [data_type] => logout
 )
 
+Received data: stdClass Object
+(
+    [password2] => 
+    [password] => 
+    [email] => 
+    [username] => 
+    [data_type] => signup
+)
+

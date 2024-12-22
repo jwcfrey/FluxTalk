@@ -78,3 +78,8 @@ input[type=radio] {
     padding: 10px;
 }
 
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}

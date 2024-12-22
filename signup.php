@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FluxTalk</title>
-    <link rel="stylesheet" href="assets/css/signup.css"/>
+    <link rel="stylesheet" href="assets/css/signup.css">
 </head>
 
 <body>
@@ -31,6 +31,10 @@
             <input type="password" name="password" placeholder="Password"><br>
             <input type="password" name="password2" placeholder="Retype Password"><br>
             <input type="button" value="Sign up" id="signup_button" class="button_signup"><br>
+            <br>
+            <a href="login.php" class="login_account">
+                Already have an account? login here
+            </a>
         </form>
     </div>
 </body>
