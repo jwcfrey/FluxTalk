@@ -96,6 +96,10 @@ function logout_user() {
 
 // Fetch user info on page load
 get_data({}, "user_info");
+get_data({}, "contacts");
+
+var radio_contacts = _("radio_contacts");
+radio_contacts.checked = true;
 
 function get_contacts(e) {
     get_data({}, "contacts");

@@ -151,8 +151,8 @@ if (is_array($data)) {
                         <input type="radio" value="Male" id="gender_male" name="gender" ' . $gender_male . '> Male<br>
                         <input type="radio" value="Female" id="gender_female" name="gender" ' . $gender_female . '> Female<br>
                     </div>
-                    <input type="text" name="password" placeholder="Password" value="' . $data->password . '"><br>
-                    <input type="text" name="password2" placeholder="Retype Password" value="' . $data->password . '"><br>
+                    <input type="password" name="password" placeholder="Password" value="' . $data->password . '"><br>
+                    <input type="password" name="password2" placeholder="Retype Password" value="' . $data->password . '"><br>
                     <input type="button" value="Save Settings" id="save_settings_button" class="button_signup" onclick="collect_data(event)"><br>
                 </form>
             </div>

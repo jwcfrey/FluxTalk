@@ -29,7 +29,7 @@ if (isset($DATA_OBJ->find->userid)) {
             // User tidak ditemukan
             $info = new stdClass();
             $info->message = "That contact was not found";
-            $info->data_type = "error";
+            $info->data_type = "chats";
             echo json_encode($info);
         }
     } else {
