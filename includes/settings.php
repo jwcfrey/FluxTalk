@@ -25,44 +25,141 @@ if (is_array($data)) {
     }
 
     $mydata = '
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Settings</title>
-                <link rel="preload" href="/assets/css/index.css" as="style" onload="this.rel=\'stylesheet\'">
-                <noscript><link rel="stylesheet" href="/assets/css/index.css"></noscript>
-            </head>
-            <body>
-                    <div id="error"></div>
-                    <div class="myform_first">
-                        <div>
-                            <img src="' . $image . '" alt="profile_settings" />
-                            <input type="button" value="Change Image" id="change_image_button" class="button_signup">
-                        </div>
-                        <form id="myform">
-                            <input type="text" name="username" placeholder="Username" value="' . $data->username . '"><br>
-                            <input type="text" name="email" placeholder="Email" value="' . $data->email . '"><br>
-                            <div class="gender">
-                                Gender: <br>
-                                <input type="radio" value="Male" id="gender_male" name="gender" ' . $gender_male . '> Male<br>
-                                <input type="radio" value="Female" id="gender_female" name="gender" ' . $gender_female . '> Female<br>
-                            </div>
-                            <input type="text" name="password" placeholder="Password" value="' . $data->password . '"><br>
-                            <input type="text" name="password2" placeholder="Retype Password" value="' . $data->password . '"><br>
-                            <input type="button" value="Save Settings" id="save_settings_button" class="button_signup" onclick="collect_data(event)"><br>
-                        </form>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Settings</title>
+            <style>
+                @keyframes appearance {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(50px);
+                        rotate(50deg);
+                        transform-origin: 100% 100%;
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0px);
+                        rotate(0deg);
+                        transform-origin: 100% 100%;
+                    }
+                }
+
+                form {
+                    text-align: left;
+                    margin: auto;
+                    padding: 10px;
+                    width: 100%;
+                    max-width: 400px;
+                }
+
+                .myform_first {
+                    display: flex;
+                    animation: appearance 0.7s ease;
+                    text-align: center;
+                }
+
+                .myform_first img {
+                    width: 200px; 
+                    height: 200px; 
+                    margin: 10px;
+                }
+
+                #change_image_button {
+                    display: inline-block;
+                    background-color: #9b9a80;
+                    padding: 1em;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                #change_image_input {
+                    display: none;
+                }
+
+                #signup {
+                    font-size: 17px;
+                    font-family: "Roboto Slab", serif;
+                }
+
+                .login_account {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                }
+
+                #error {
+                    text-align: center;
+                    padding: 0.5em;
+                    background-color: #ecaf91;
+                    color: white;
+                    display: none;
+                }
+
+                input[type=text],
+                input[type=password] {
+                    padding: 10px;
+                    margin: 10px;
+                    width: 200px;
+                    border-radius: 5px;
+                    border: solid 1px grey;
+                }
+
+                input[type=button] {
+                    margin: 10px;
+                    border-radius: 5px;
+                    border: solid 1px grey;
+                    width: 221px;
+                    height: 35px;
+                    cursor: pointer;
+                    background-color: #2b5488;
+                    color: white;
+                }
+
+                input[type=radio] {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+
+                .gender {
+                    padding: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="error"></div>
+            <div class="myform_first">
+                <div>
+                    <img src="' . $image . '" alt="profile_settings" />
+                    <label for="change_image_input" id="change_image_button" style="display: inline-block;">
+                        Change Image
+                    </label>
+                        <input type="file" onchange="upload_profile_image(this.files)" value="Change Image" id="change_image_input" class="button_signup">
+                </div>
+                <form id="myform">
+                    <input type="text" name="username" placeholder="Username" value="' . $data->username . '"><br>
+                    <input type="text" name="email" placeholder="Email" value="' . $data->email . '"><br>
+                    <div class="gender">
+                        Gender: <br>
+                        <input type="radio" value="Male" id="gender_male" name="gender" ' . $gender_male . '> Male<br>
+                        <input type="radio" value="Female" id="gender_female" name="gender" ' . $gender_female . '> Female<br>
                     </div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            document.querySelector(".myform_first").classList.add("loaded");
-                        });
-                    </script>
-                    <script src="./assets/js/index.js"></script>
-            </body>
-            </html>
-        ';
+                    <input type="text" name="password" placeholder="Password" value="' . $data->password . '"><br>
+                    <input type="text" name="password2" placeholder="Retype Password" value="' . $data->password . '"><br>
+                    <input type="button" value="Save Settings" id="save_settings_button" class="button_signup" onclick="collect_data(event)"><br>
+                </form>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    document.querySelector(".myform_first").classList.add("loaded");
+                });
+            </script>
+            <script src="./assets/js/index.js"></script>
+        </body>
+        </html>
+    ';
 }
 
 $info->message = $mydata;
