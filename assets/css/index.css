@@ -121,6 +121,23 @@
     height: 100px;
 }
 
+#active_contact {
+    width: 85%;
+    height: 18%;
+    margin: 10px;
+    border: solid thin #aaa;
+    padding: 5px;
+    background-color: #eee;
+    color: #444;
+}
+
+#active_contact img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 2px;
+}
+
 .loader_on {
     position: absolute;
     width: 30%;

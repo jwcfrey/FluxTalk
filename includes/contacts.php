@@ -1,6 +1,7 @@
 <?php
 
-$sql = "SELECT * FROM users limit 10";
+$myid = $_SESSION['userid'];
+$sql = "SELECT * FROM users where userid != '$myid' limit 10";
 $myusers = $DB->read($sql, []);
 
 $mydata = '
@@ -12,6 +13,15 @@ $mydata = '
     <title>Contacts</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto+Slab:wght@100..900&display=swap");
+
+        #contact {
+            cursor: pointer;
+            transition: all .5s cubic-bezier(0.68, -2, 0.265, 1.55);
+        }
+
+        #contact:hover {
+            transform: scale(1.2);
+        }
 
         #wrapper {
             max-width: 900px;
@@ -159,20 +169,20 @@ $mydata = '
 </head>
 <body>
     <div class="image_contact">';
-        if (is_array($myusers)) {
-            foreach ($myusers as $row) {
-                $image = ($row->gender == "Male") ? "./assets/ui/images/malenoprofile.png" : "./assets/ui/images/femalenoprofile.png";
-                if (file_exists($row->image)) {
-                    $image = $row->image;
-                }
-
-                $mydata .= "
-                <div id='contact'>
-                    <img src='$image' alt='contact' loading='lazy'>
-                    <br>$row->username
-                </div>";
+    if (is_array($myusers)) {
+        foreach ($myusers as $row) {
+            $image = ($row->gender == "Male") ? "./assets/ui/images/malenoprofile.png" : "./assets/ui/images/femalenoprofile.png";
+            if (file_exists($row->image)) {
+                $image = $row->image;
             }
+
+            $mydata .= "
+            <div id='contact' userid='$row->userid' onclick='start_chat(event)'>
+                <img src='$image'>
+                <br>$row->username
+            </div>";
         }
+    }
 $mydata .= '
     </div>
     <script>
@@ -180,6 +190,7 @@ $mydata .= '
             document.querySelector(".image_contact").classList.add("loaded");
         });
     </script>
+    <script src="/assets/js/index.js"></script>
 </body>
 </html>';
 

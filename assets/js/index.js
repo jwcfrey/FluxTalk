@@ -1,3 +1,4 @@
+var CURRENT_CHAT_USER = "";
 function _(element) {
     return document.getElementById(element);
 }
@@ -200,5 +201,29 @@ function handle_drag_and_drop(e) {
         upload_profile_image(e.dataTransfer.files);
     } else {
         e.target.className = "";
+    }
+}
+
+function start_chat(e) {
+    let target = e.target;
+
+    // Pastikan untuk mendapatkan atribut 'userid' dari elemen yang benar
+    while (!target.hasAttribute("userid") && target.parentNode) {
+        target = target.parentNode;
+    }
+
+    // Ambil userid yang valid dari elemen
+    const userid = target.getAttribute("userid");
+    if (userid) {
+        CURRENT_CHAT_USER = userid;
+
+        // Alihkan ke tab chat dan ambil data chat
+        const radio_chat = _("radio_chat");
+        if (radio_chat) {
+            radio_chat.checked = true;
+        }
+        get_data({ userid: CURRENT_CHAT_USER }, "chats");
+    } else {
+        console.error("Error: User ID not found in the clicked element.");
     }
 }
