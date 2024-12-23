@@ -126,13 +126,18 @@ if (is_array($data)) {
                 .gender {
                     padding: 10px;
                 }
+
+                .dragging {
+                    border: dashed 2px #aaa;
+                }
             </style>
         </head>
         <body>
             <div id="error"></div>
             <div class="myform_first">
                 <div>
-                    <img src="' . $image . '" alt="profile_settings">
+                <span style="font-size: 11px;">drag and drop an image to change</span><br>
+                    <img ondragover="handle_drag_and_drop(event)" ondrop="handle_drag_and_drop(event)" ondragleave="handle_drag_and_drop(event)" src="' . $image . '" alt="profile_settings">
                     <label for="change_image_input" id="change_image_button" style="display: inline-block;">
                         Change Image
                     </label>

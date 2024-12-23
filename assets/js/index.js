@@ -187,3 +187,18 @@ function upload_profile_image(files) {
     xml.open("POST", "uploader.php", true);
     xml.send(myform);
 }
+
+function handle_drag_and_drop(e) {
+    if(e.type == "dragover") {
+        e.preventDefault();
+        e.target.className = "dragging";
+    } else if (e.type == "dragleave") {
+        e.target.className = "";
+    } else if (e.type == "drop") {
+        e.preventDefault();
+        e.target.className = "";
+        upload_profile_image(e.dataTransfer.files);
+    } else {
+        e.target.className = "";
+    }
+}
