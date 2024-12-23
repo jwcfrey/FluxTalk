@@ -3,6 +3,7 @@
 #wrapper {
     max-width: 900px;
     min-height: 500px;
+    max-height: 630px;
     display: flex;
     margin: auto;
     color: white;
@@ -81,6 +82,7 @@
     background-color: #383e48;
     flex: 1;
     min-height: 430px;
+    max-height: 530px;
 }
 
 #inner_right_pannel {
@@ -88,6 +90,7 @@
     flex: 2;
     min-height: 430px;
     transition: all 1s ease;
+    max-height: 530px;
 }
 
 #radio_contacts:checked ~ #inner_right_pannel {
@@ -136,6 +139,15 @@
     height: 70px;
     float: left;
     margin: 2px;
+}
+
+#messages_holder_parent {
+    height: 630px;
+}
+
+#messages_holder {
+    height: 480px;
+    overflow-y: scroll;
 }
 
 #message_left {
@@ -206,6 +218,11 @@
     top: 20px;
 }
 
+.menu_chat {
+    display: flex;
+    width: 100%;
+    height: 40p{
+
 .loader_on {
     position: absolute;
     width: 30%;
@@ -213,6 +230,34 @@
 
 .loader_off {
     display: none;
+}
+
+input[type=text] {
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+
+input[type=password] {
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+
+input[type=submit]{
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    border-radius: 5px;
+    border: solid 1px grey;
+    width: 103%;
+    cursor: pointer;
+    background-color: #2b5488;
+    color: white;
 }
 
 /* contacts */

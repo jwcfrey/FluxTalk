@@ -37,6 +37,8 @@ function get_data(find, type) {
 function handle_result(result) {
     if (result.trim() !== "") {
         try {
+            var inner_right_pannel = _("inner_right_pannel");
+            inner_right_pannel.style.overflow = "visible";
             var obj = JSON.parse(result);
             if (typeof obj.logged_in !== "undefined" && !obj.logged_in) {
                 window.location = "login.php";
@@ -59,6 +61,7 @@ function handle_result(result) {
                         break;
                     case "contacts":
                         var inner_left_pannel = _("inner_left_pannel");
+                        inner_right_pannel.style.overflow = "hidden";
                         inner_left_pannel.innerHTML = obj.message;
                         break;
                     case "chats":

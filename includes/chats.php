@@ -25,21 +25,72 @@ if (isset($DATA_OBJ->find->userid)) {
 
             $messages = "
                 <link rel='stylesheet' href='/assets/css/index.css'>
-                <div id='message_left'>
-                <div></div>
-                    <img src='$image'>
-                    <b>$row->username</b><br>
-                    This is a test messages<br><br>
-                    <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                <div id='messages_holder_parent'>
+                <div id='messages_holder'>
+                    <div id='message_left'>
+                    <div></div>
+                        <img src='$image'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+                    
+                    <div id='message_right'>
+                    <div></div>
+                        <img src='$image' style='float: right;'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+
+                    <div id='message_left'>
+                    <div></div>
+                        <img src='$image'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+
+                    <div id='message_right'>
+                    <div></div>
+                        <img src='$image' style='float: right;'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+
+                    <div id='message_right'>
+                    <div></div>
+                        <img src='$image' style='float: right;'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+
+                    <div id='message_right'>
+                    <div></div>
+                        <img src='$image' style='float: right;'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+
+                    <div id='message_right'>
+                    <div></div>
+                        <img src='$image' style='float: right;'>
+                        <b>$row->username</b><br>
+                        This is a test messages<br><br>
+                        <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                    </div>
+                    
                 </div>
-                
-                <div id='message_right'>
-                <div></div>
-                    <img src='$image' style='float: right;'>
-                    <b>$row->username</b><br>
-                    This is a test messages<br><br>
-                    <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
-                </div>";
+                <div class='menu_chat'>
+                    <input style='flex: 6; border: none; font-size: 14px; padding: 4px;' type='text' placeHolder='type your message ' />
+                    <input style='flex: 1; cursor: pointer;' type='button' value='send' />
+                </div>
+                </div>
+
+                ";
 
             $info->user = $mydata;
             $info->messages = $messages;
