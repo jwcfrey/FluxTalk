@@ -132,11 +132,11 @@ if (is_array($data)) {
             <div id="error"></div>
             <div class="myform_first">
                 <div>
-                    <img src="' . $image . '" alt="profile_settings" />
+                    <img src="' . $image . '" alt="profile_settings">
                     <label for="change_image_input" id="change_image_button" style="display: inline-block;">
                         Change Image
                     </label>
-                        <input type="file" onchange="upload_profile_image(this.files)" value="Change Image" id="change_image_input" class="button_signup">
+                        <input type="file" onchange="upload_profile_image(this.files)" id="change_image_input" value="Change Image" class="button_signup">
                 </div>
                 <form id="myform">
                     <input type="text" name="username" placeholder="Username" value="' . $data->username . '"><br>
@@ -156,14 +156,20 @@ if (is_array($data)) {
                     document.querySelector(".myform_first").classList.add("loaded");
                 });
             </script>
-            <script src="./assets/js/index.js"></script>
+            <script src="/assets/js/index.js"></script>
         </body>
         </html>
     ';
 }
 
 $info->message = $mydata;
-$info->data_type = "settings";
+$info->data_type = "contacts";
 echo json_encode($info);
 
 die;
+
+$info -> message = "No contacts were found";
+$info -> data_type = "error";
+echo json_encode($info);
+
+?>

@@ -1,9 +1,6 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
 
-header('Content-Type: application/json');
+session_start();
 
 $DATA_RAW = file_get_contents("php://input");
 $DATA_OBJ = json_decode($DATA_RAW);

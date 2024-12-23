@@ -16,7 +16,7 @@
     <div id="wrapper">
         <div id="left_pannel">
             <div id="left_pannel_image user_info">
-                <img id="profile_image" src="./assets/ui/images/femalenoprofile.png" alt="">
+                <img id="profile_image" src="./assets/ui/images/malenoprofile.png">
                 <br>
                 <span id="username">Loading..</span>
                 <br>
