@@ -35,12 +35,12 @@ $mydata = '
             padding: 10px;
         }
 
-        #profile_image {
-            width: 50%;
-            border: solid thin white;
-            border-radius: 50%;
-            margin: 10px;
-        }
+        // #profile_image {
+        //     width: 50%;
+        //     border: solid thin white;
+        //     border-radius: 50%;
+        //     margin: 10px;
+        // }
 
         #left_pannel label {
             width: 94.2%;

@@ -7099,3 +7099,251 @@ Received data_type: settings
 Received data_type: login
 Received data_type: user_info
 Received data_type: settings
+Received data_type: login
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: settings
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: settings
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Received data_type: chats
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: chats
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: settings
+Received data_type: chats
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Received data_type: chats
+Received data_type: logout
+Received data_type: login
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_inf
+Received data_type: contacts
+Received data_type: settings
+Received data_type: chats
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: chats
+Received data_type: contacts
+Received data_type: settings
+Received data_type: chats
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: settings
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: settings
+Received data_type: user_info
+Received data_type: save_settings
+stdClass Object
+(
+    [password2] => Ogiyuka123.
+    [password] => Ogiyuka123.
+    [gender] => Male
+    [email] => ogiyuka@gmail.com
+    [username] => ogiyuka
+    [data_type] => save_settings
+)
+Validated data: Array
+(
+    [userid] => 589628019001
+    [username] => ogiyuka
+    [email] => ogiyuka@gmail.com
+    [gender] => Male
+    [password] => Ogiyuka123.
+)
+Received data_type: user_info
+Received data_type: settings
+Received data_type: save_settings
+stdClass Object
+(
+    [password2] => Ogiyuka123.
+    [password] => Ogiyuka123.
+    [gender] => Female
+    [email] => ogiyuka@gmail.com
+    [username] => ogiyuka
+    [data_type] => save_settings
+)
+Validated data: Array
+(
+    [userid] => 589628019001
+    [username] => ogiyuka
+    [email] => ogiyuka@gmail.com
+    [gender] => Female
+    [password] => Ogiyuka123.
+)
+Received data_type: user_info
+Received data_type: settings
+Received data_type: contacts
+Received data_type: settings
+Received data_type: chats
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: settings
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: settings
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+File uploaded to: uploads/67696cf6d8cc9_WhatsApp_Image_2024-10-30_at_06.08.23_e20ffef5.jpg
+Received data_type: chats
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: contacts
+Received data_type: settings
+Received data_type: logout
+Received data_type: login
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+File uploaded to: uploads/67696d4aabd45_user1.png
+Received data_type: contacts
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Received data_type: contacts
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Uploader accessed
+Received data_type: user_info
+Received data_type: settings
+Received data_type: contacts
+Received data_type: login
+Received data_type: login
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Uploader accessed
+File uploaded to: uploads/67696f68c4685_user1.png
+Received data_type: chats
+Received data_type: contacts
+Received data_type: settings
+Received data_type: user_info
+Received data_type: settings
+Uploader accessed
+File uploaded to: uploads/67696f91c1058_user2.jpg
+Received data_type: contacts
+Received data_type: settings
+Received data_type: chats
+Received data_type: user_info
+Received data_type: user_info
+Received data_type: contacts
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats
+Received data_type: user_info
+Received data_type: settings
+Received data_type: contacts
+Received data_type: chats

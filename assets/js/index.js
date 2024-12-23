@@ -176,7 +176,7 @@ function upload_profile_image(files) {
     var xml = new XMLHttpRequest();
     xml.onload = function () {
         if (xml.readyState == 4 || xml.status == 200) {
-            alert(xml.responseText);
+            // alert(xml.responseText);
             change_image_button.disabled = false;
             change_image_button.innerHTML = "Change Image";
         }
@@ -184,6 +184,6 @@ function upload_profile_image(files) {
 
     myform.append('file', files[0]);
     myform.append('data_type', "change_profile_image");
-    xml.open("POST", "/uploader.php", true);
+    xml.open("POST", "uploader.php", true);
     xml.send(myform);
 }

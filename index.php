@@ -16,8 +16,9 @@
     <div id="wrapper">
         <div id="left_pannel">
             <div id="left_pannel_image user_info">
-                <img id="profile_image" src="./assets/ui/images/malenoprofile.png">
-                <br>
+                <iframe src="https://giphy.com/embed/c0xcPudJy1JDy" width="100" height="100" frameBorder="0"
+                    class="giphy-embed" allowFullScreen></iframe>
+                <p><a href="https://giphy.com/stickers/anime-gif-c0xcPudJy1JDy"></a></p>
                 <span id="username">Loading..</span>
                 <br>
                 <span id="email" class="wrapper-span">Loading..</span>
@@ -48,13 +49,11 @@
             </div>
             <div id="container">
                 <div id="inner_left_pannel">
-
                 </div>
                 <input type="radio" id="radio_chat" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_contacts" name="myradio" class="radio_all_chat">
                 <input type="radio" id="radio_settings" name="myradio" class="radio_all_chat">
                 <div id="inner_right_pannel">
-
                 </div>
             </div>
         </div>

@@ -1,6 +1,9 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
-session_start();
+header('Content-Type: application/json');
 
 $DATA_RAW = file_get_contents("php://input");
 $DATA_OBJ = json_decode($DATA_RAW);
@@ -42,7 +45,6 @@ if (isset($DATA_OBJ->data_type)) {
                 $data['userid'] = $_SESSION['userid'];
                 $query = "SELECT username, email FROM users WHERE userid = :userid LIMIT 1";
                 $result = $DB->read($query, $data);
-
                 if (is_array($result)) {
                     $result = $result[0];
                     $result->data_type = "user_info";
