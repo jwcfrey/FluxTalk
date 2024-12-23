@@ -22,7 +22,27 @@ if (isset($DATA_OBJ->find->userid)) {
                     <img src='$image'>
                     <br>$row->username
                 </div>";
-            $info->message = $mydata;
+
+            $messages = "
+                <link rel='stylesheet' href='/assets/css/index.css'>
+                <div id='message_left'>
+                <div></div>
+                    <img src='$image'>
+                    <b>$row->username</b><br>
+                    This is a test messages<br><br>
+                    <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                </div>
+                
+                <div id='message_right'>
+                <div></div>
+                    <img src='$image' style='float: right;'>
+                    <b>$row->username</b><br>
+                    This is a test messages<br><br>
+                    <span style='font-size: 11px; color: #999;'>20 Jan 2024 10:00 am</span>
+                </div>";
+
+            $info->user = $mydata;
+            $info->messages = $messages;
             $info->data_type = "chats";
             echo json_encode($info);
         } else {

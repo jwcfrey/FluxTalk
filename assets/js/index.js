@@ -63,7 +63,8 @@ function handle_result(result) {
                         break;
                     case "chats":
                         var inner_left_pannel = _("inner_left_pannel");
-                        inner_left_pannel.innerHTML = obj.message;
+                        inner_left_pannel.innerHTML = obj.user;
+                        inner_right_pannel.innerHTML = obj.messages;
                         break;
                     case "settings":
                         var inner_left_pannel = _("inner_left_pannel");
